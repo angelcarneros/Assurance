@@ -48,8 +48,67 @@ Inspired by password managers such as Bitwarden and KeePass, the project focuses
 
 Additional libraries and technologies will be introduced as the project evolves.
 
+## Development Roadmap
+
+### v0.1 — Project Initialization & Console Interface
+
+- [x] Create the GitHub repository.
+- [x] Set up the Java project structure.
+- [x] Implement the main console menu.
+- [x] Add basic menu navigation and exit functionality.
+- [ ] Implement input validation and error handling.
+
+### v0.2 — Credential Management
+
+- [ ] Create the `Credential` class.
+- [ ] Add credentials using fictional test data.
+- [ ] View saved accounts.
+- [ ] Search for credentials.
+- [ ] Edit and delete credentials.
+- [ ] Manage credentials in memory using collections.
+
+### v0.3 — Security & Local Storage
+
+- [ ] Research secure password storage and encryption.
+- [ ] Implement master password protection.
+- [ ] Implement secure key derivation using Argon2id.
+- [ ] Encrypt the local vault using AES-256-GCM.
+- [ ] Add encrypted local data persistence.
+- [ ] Implement vault locking and unlocking.
+
+### v0.4 — Desktop Application
+
+- [ ] Set up JavaFX.
+- [ ] Create a graphical login and unlock screen.
+- [ ] Design the main vault interface.
+- [ ] Add credential management forms.
+- [ ] Implement search and filtering.
+- [ ] Add light and dark themes.
+
+### v0.5 — Additional Features
+
+- [ ] Implement a secure password generator.
+- [ ] Add clipboard functionality.
+- [ ] Implement automatic vault locking.
+- [ ] Add encrypted backup and restore functionality.
+
+### v1.0 — Testing & Improvements
+
+- [ ] Add automated unit tests.
+- [ ] Test encryption, decryption, and data integrity.
+- [ ] Improve error handling and input validation.
+- [ ] Review security risks and sensitive data handling.
+- [ ] Improve documentation and installation instructions.
+- [ ] Prepare an initial release.
+
 ## Project Status
 
-**Early Development — Learning Project**
+**Early Development — v0.1**
 
-Assurance is currently in its initial development stage. Features,
+Assurance is currently in its initial development stage. Features, architecture, and security mechanisms may change as the project evolves.
+
+**Security notice:** Assurance is an educational project and has not undergone a professional security audit. It should not be used to store real or sensitive credentials.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

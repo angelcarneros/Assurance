@@ -11,7 +11,9 @@ public class Main {
 
         boolean exit = false;
         int menuSelection;
-
+        String service; 
+        String username;
+        String password;
 
         // MENU //
 
@@ -22,13 +24,45 @@ public class Main {
             System.out.println("[4] Delete a credential");
             System.out.println("[0] EXIT");
             System.out.print("SELECT AN OPTION: ");
-            menuSelection = sc.nextInt();
 
+            if (sc.hasNextInt()) {  // hasNextInt() --> COMPRUEBA SI EL SIGUIENTE DATO INTRODUCIDO ES UN NÚMERO ENTERO (int).
+                                    // DEVUELVE true SI LO ES Y false SI NO LO ES.
+                menuSelection = sc.nextInt();
+                sc.nextLine();
+            } else {
+                System.out.println("<ERROR> You must enter a number");
+                sc.nextLine();
+                continue;
+            }
+
+            /* nextInt() lee el número, pero deja pendiente el salto de línea que introduces al pulsar Enter.
+            Por eso, el primer nextLine() no te permitirá escribir el servicio: leerá directamente ese salto de línea.
+            */
 
             switch (menuSelection) {
                 case 1:
-                System.out.println();
+                System.out.println("===== ADD A CREDENTIAL =====");
+                System.out.println("Service: ");
+                service = sc.nextLine();
+                if (service.isBlank()) { // .isBlank() --> COMPROBAR SI UNA CADENA ESTA VACIA (APRENDIDO NUEVO)
+                        System.out.println("<ERROR> Service cannot be empty");
+                        break;
+                }
+                System.out.println("Username: ");
+                username = sc.nextLine();
+                if (username.isBlank()) {
+                        System.out.println("<ERROR> Username cannot be empty");
+                        break;
+                }
+                System.out.println("Password: ");
+                password = sc.nextLine();
+                if (password.isBlank()) {
+                        System.out.println("<ERROR> Password cannot be empty");
+                        break;
+                    }
+                System.out.println("Credential validated successfully");
                 break;
+
 
                 case 2:
                 System.out.println();

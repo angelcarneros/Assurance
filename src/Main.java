@@ -61,7 +61,13 @@ public class Main {
                         break;
                     }
                 System.out.println("Credential validated successfully");
+                Credential account = new Credential(service, username, password);
+
                 break;
+
+
+
+
 
 
                 case 2:

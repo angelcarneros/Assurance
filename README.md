@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="assets/logo.png" alt="Assurance Logo" width="110">
+  <img src="assets/logo.png" alt="Assurance Logo" width="200">
   <h1>Assurance</h1>
   <p><strong>Your passwords. Your privacy. Your control.</strong></p>
 </div>

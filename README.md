@@ -4,7 +4,7 @@
   <h1>Assurance</h1>
   <p><strong>Your passwords. Your privacy. Your control.</strong></p>
 </div>
-
+    
 Assurance is a personal project focused on developing a secure, offline password manager using Java.
 
 The goal is to create a simple and privacy-focused application that allows users to store, manage, and protect their credentials locally, without relying on cloud services.
@@ -60,16 +60,16 @@ Additional libraries and technologies will be introduced as the project evolves.
 - [x] Set up the Java project structure.
 - [x] Implement the main console menu.
 - [x] Add basic menu navigation and exit functionality.
-- [ ] Implement input validation and error handling.
+- [x] Implement input validation and error handling.
 
 ### v0.2 — Credential Management
 
-- [ ] Create the `Credential` class.
-- [ ] Add credentials using fictional test data.
-- [ ] View saved accounts.
+- [x] Create the `Credential` class.
+- [x] Add credentials using fictional test data.
+- [x] View saved accounts.
 - [ ] Search for credentials.
 - [ ] Edit and delete credentials.
-- [ ] Manage credentials in memory using collections.
+- [x] Manage credentials in memory using collections.
 
 ### v0.3 — Security & Local Storage
 

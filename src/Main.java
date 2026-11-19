@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
@@ -6,6 +7,8 @@ public class Main {
         System.out.println("Your passwords. Your privacy. Your control.");
 
         Scanner sc = new Scanner(System.in);
+        ArrayList<Credential> credentials = new ArrayList<>();
+
 
         // DECLARACION DE VARIABLES //
 
@@ -41,37 +44,39 @@ public class Main {
 
             switch (menuSelection) {
                 case 1:
-                System.out.println("===== ADD A CREDENTIAL =====");
-                System.out.println("Service: ");
-                service = sc.nextLine();
-                if (service.isBlank()) { // .isBlank() --> COMPROBAR SI UNA CADENA ESTA VACIA (APRENDIDO NUEVO)
+                    System.out.println("===== ADD A CREDENTIAL =====");
+                    System.out.println("Service: ");
+                    service = sc.nextLine();
+                    if (service.isBlank()) { // .isBlank() --> COMPROBAR SI UNA CADENA ESTA VACIA (APRENDIDO NUEVO)
                         System.out.println("<ERROR> Service cannot be empty");
                         break;
-                }
+                    }
+
                 System.out.println("Username: ");
                 username = sc.nextLine();
                 if (username.isBlank()) {
-                        System.out.println("<ERROR> Username cannot be empty");
-                        break;
+                    System.out.println("<ERROR> Username cannot be empty");
+                    break;
                 }
                 System.out.println("Password: ");
                 password = sc.nextLine();
                 if (password.isBlank()) {
-                        System.out.println("<ERROR> Password cannot be empty");
-                        break;
-                    }
-                System.out.println("Credential validated successfully");
-                Credential account = new Credential(service, username, password);
+                    System.out.println("<ERROR> Password cannot be empty");
+                    break;
+                }
 
+                Credential account = new Credential(service, username, password);
+                credentials.add(account); // add introduce el objeto account en la lista
+                System.out.println("Credential validated successfully");
                 break;
 
-
-
-
-
-
                 case 2:
-                System.out.println();
+                System.out.println("===== VIEW SAVED ACCOUNTS =====");
+                System.out.println("Total accounts: " + credentials.size());
+                for (int i = 0; i < credentials.size(); i++) {
+                    // para obtener o consultar el valor de un atributo de un objeto private                }
+                    System.out.println(credentials.get(i).getService());
+                }
                 break;
 
                 case 3:

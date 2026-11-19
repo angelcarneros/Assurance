@@ -1,6 +1,9 @@
-# Assurance
 
-**Your passwords. Your privacy. Your control.**
+<div align="center">
+  <img src="assets/logo.png" alt="Assurance Logo" width="110">
+  <h1>Assurance</h1>
+  <p><strong>Your passwords. Your privacy. Your control.</strong></p>
+</div>
 
 Assurance is a personal project focused on developing a secure, offline password manager using Java.
 
@@ -9,6 +12,7 @@ The goal is to create a simple and privacy-focused application that allows users
 This project is also an opportunity to learn more about Java development, cryptography, cybersecurity, and secure software design.
 
 ---
+
 
 ## About the Project
 
